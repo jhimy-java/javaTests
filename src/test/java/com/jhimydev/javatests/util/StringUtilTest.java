@@ -26,6 +26,29 @@ public class StringUtilTest {
         StringUtil.repeat("hola", -1);
     }
 
+    //reto
+    @Test
+    public void word_is_not_empty() {
+        Assert.assertFalse(StringUtil.isEmpty("Palabra"));
+    }
+
+    @Test
+    public void quotationMarks_is_Empty() {
+        Assert.assertTrue(StringUtil.isEmpty(""));
+    }
+
+    @Test
+    public void null_is_empty() {
+        Assert.assertTrue(StringUtil.isEmpty(null));
+    }
+    //extra con espacios
+    @Test
+    public void space_is_Empty() {
+        String str = new String(" ");
+        Assert.assertTrue(StringUtil.isEmpty(str));
+    }
+
+
 
 
 
